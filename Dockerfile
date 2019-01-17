@@ -8,6 +8,10 @@ RUN apt-get update && apt-get install -yq  \
     julia \
     jupyter-notebook \
     wget \
+    python3-numpy \
+    python3-scipy \
+    python3-pandas \
+    python3-matplotlib \
 && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -ms /bin/bash juliaUser
